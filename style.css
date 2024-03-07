@@ -4,16 +4,28 @@ body{
   justify-content:center;
   align-items:center;
   height: 100vh;
+  background-color: black;
 }
 
 .container{
   display:flex;
   /*break items into multiple lines*/
   flex-wrap:wrap; 
-  width:520px;  
+  width:520px; 
 }
 
 .square{
-  border:1px solid black;
+  border:1px solid white;
   padding:15px;
+  cursor:pointer;
 }
+
+.square:hover{
+  background-color: lightpink;
+}
+
+.selectedSquare{
+  background-color: lightpink;
+}
+
+
