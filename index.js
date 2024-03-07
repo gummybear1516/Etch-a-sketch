@@ -1,4 +1,5 @@
 const container = document.querySelector(".container");
+const clearBtn = document.querySelector(".clear");
 
 const row = 16;
 const column = 16;
@@ -13,8 +14,10 @@ function createGridDivs(row, column) {
   }
 }
 
+createGridDivs(row, column);
+const divSquares = document.querySelectorAll(".square");
+
 function drawingHandler() {
-  const divSquares = document.querySelectorAll(".square");
   //initially disble the draw mode
   let drawFlag = false;
 
@@ -38,5 +41,11 @@ function drawingHandler() {
   });
 }
 
-createGridDivs(row, column);
+function clearSketch() {
+  divSquares.forEach((divSquare) => {
+    divSquare.classList.remove("selectedSquare");
+  });
+}
+
+clearBtn.addEventListener("click", clearSketch);
 drawingHandler();

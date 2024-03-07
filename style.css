@@ -1,31 +1,43 @@
-body{
-  margin:0;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  height: 100vh;
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: black;
 }
 
-.container{
-  display:flex;
+h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.container {
+  display: flex;
   /*break items into multiple lines*/
-  flex-wrap:wrap; 
-  width:520px; 
+  flex-wrap: wrap;
+  width: 420px;
+  margin: 20px;
 }
 
-.square{
-  border:1px solid white;
-  padding:15px;
-  cursor:pointer;
+.square {
+  border: 1px solid white;
+  padding: 12px;
+  cursor: pointer;
 }
 
-.square:hover{
+.square:hover {
   background-color: lightpink;
 }
 
-.selectedSquare{
+.selectedSquare {
   background-color: lightpink;
 }
 
-
+button {
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  background-color: orange;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
