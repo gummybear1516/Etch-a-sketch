@@ -1,0 +1,19 @@
+body{
+  margin:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height: 100vh;
+}
+
+.container{
+  display:flex;
+  /*break items into multiple lines*/
+  flex-wrap:wrap; 
+  width:520px;  
+}
+
+.square{
+  border:1px solid black;
+  padding:15px;
+}
